@@ -12,7 +12,8 @@
     background-position: center !important;
     height: 130px !important;
     border-radius: 10px;
-    background-size: cover;
+    background-size: cover !important;
+    cursor: pointer;
 }
 
 .menu-slıder a{
@@ -87,6 +88,19 @@ nav{
     
   }
 
+  .tabs-content{
+    display: none;
+  }
+
+  .tabs-content.is-active{
+    display: block;
+  }
+
+
+  .popup img{
+        height: 200px;
+           
+  }
   .popup{
     position: fixed;
     -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
@@ -300,14 +314,21 @@ img {
   object-fit: cover;
 }
 
+
+.card_image img {
+  height: 100px;
+
+
+}
+
 .card-home .card_title_home {
   text-align: center;
   border-radius: 0px 0px 40px 40px;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
+  font-size: 20px;
+  margin-top: -50px;
+
 }
 
 .card-home:hover {

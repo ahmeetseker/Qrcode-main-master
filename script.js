@@ -54,4 +54,21 @@ function allPopupClose(){
 
 
 
- 
+ let tabs = document.querySelectorAll('.menu-slıder'),
+     contents = document.querySelectorAll('.tabs-content');
+
+
+
+     tabs.forEach((tab, index) => {
+        tab.addEventListener('click',() =>  {
+            contents.forEach((content) => {
+                content.classList.remove('is-active');
+            });
+            tabs.forEach((tab) => {
+                tab.classList.remove('is-active');
+            });
+
+            contents[index].classList.add('is-acive');
+            tabs[index].classList.add('is-active');
+        });
+     });
