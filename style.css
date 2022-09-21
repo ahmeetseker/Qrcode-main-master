@@ -85,6 +85,7 @@ nav{
 
   .popup-btn{
     cursor: pointer;
+    max-width:170px;
     
   }
 
@@ -157,15 +158,11 @@ nav{
 
   .popup p {
     padding: 15px;
+    font-family:monofur;
+    font-weight: bold;
   }
 
-  .popup-btn{
-
-    cursor:pointer;
-    width: 100%;
-  }
-
-  
+ 
 
   h1 {
     font-size: 24px;
@@ -291,6 +288,14 @@ img {
   flex-wrap: wrap;
 }
 
+.food , .drinks{
+  text-align: center;
+}
+
+.homecards{
+  margin-top: 25px;
+}
+
 .card-home {
   margin: 10px;
   width: 150px;
@@ -326,7 +331,7 @@ img {
   border-radius: 0px 0px 40px 40px;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: -50px;
 
 }
@@ -344,6 +349,37 @@ img {
 .title-black {
   color: black;
 }
+.content-btn{
+  max-width: 150px;
+}
+
+.alergens {
+ display: flex;
+ padding: 15px;
+ 
+}
+
+
+  .alergen1 span {
+    display: flex;
+    align-items: center;
+   
+  }
+  .alergen2 span {
+    display: flex;
+    align-items: center;
+   
+  }
+
+  .alergen1  p{
+    padding: 4px;
+  }
+
+  .alergen2  p{
+    padding: 4px;
+  }
+
+
 
 @media all and (max-width: 500px) {
   .card-list {

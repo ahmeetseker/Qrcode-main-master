@@ -59,7 +59,7 @@ function allPopupClose(){
 
 
 
-     tabs.forEach((tab, index) => {
+     tabs.forEach((tab, indexqr) => {
         tab.addEventListener('click',() =>  {
             contents.forEach((content) => {
                 content.classList.remove('is-active');
@@ -68,7 +68,7 @@ function allPopupClose(){
                 tab.classList.remove('is-active');
             });
 
-            contents[index].classList.add('is-acive');
-            tabs[index].classList.add('is-active');
+            contents[indexqr].classList.add('is-active');
+            tabs[indexqr].classList.add('is-active');
         });
      });
