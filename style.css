@@ -115,10 +115,11 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
-    z-index: 5;
+    z-index: 999;
     width: 100%;
     padding: 20px;
     max-height: 100%;
+    height: 100%;
 
   }
 
@@ -129,8 +130,8 @@ nav{
   .popup .fa-solid.fa-xmark{
     position:absolute;
     right: 35px;
-    top: 0px;
-    font-size: 20px;
+    top: 35px;
+    font-size: 28px;
     cursor: pointer;
 
   }
@@ -237,8 +238,7 @@ img {
 
 .card_content {
   padding: 5px;
-  backdrop-filter: blur(8px); 
-  box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+  backdrop-filter: blur(16px); 
   background-color: rgb(228 228 228 / 100%); 
 }
 
@@ -296,6 +296,10 @@ img {
   margin-top: 25px;
 }
 
+.foodcontent{
+  padding-top: 200px;
+}
+
 .card-home {
   margin: 10px;
   width: 150px;
@@ -310,6 +314,7 @@ img {
   width: inherit;
   height: inherit;
   border-radius: 40px;
+  width: 100%;
 }
 
 .card-home .card_image_home img {
@@ -322,8 +327,13 @@ img {
 
 .card_image img {
   height: 100px;
+  width: 100% ;
 
 
+}
+
+.card-home a {
+  height: 100%;
 }
 
 .card-home .card_title_home {
@@ -379,6 +389,16 @@ img {
     padding: 4px;
   }
 
+
+  .navslider{
+    backdrop-filter: blur(16px);
+    background-color: rgb(228 228 228 / 0%);
+    padding: 10px;
+    position:sticky;
+    top: 0;
+    padding-bottom: 25px;
+    z-index: 99;
+  }
 
 
 @media all and (max-width: 500px) {
